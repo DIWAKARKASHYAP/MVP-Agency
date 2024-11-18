@@ -10,23 +10,23 @@ import { BackgroundBeamsWithCollision } from '../ui/background-beams-with-collis
 // `;
  
 
-const features = [
-    {
-      title: "Speed",
-      description: "We deliver MVPs rapidly, helping you validate your ideas and get to market faster.",
-      icon: <Zap className="w-10 h-10" />,
-    },
-    {
-      title: "Scalability",
-      description: "Our solutions are built to grow with your business, ensuring long-term success.",
-      icon: <Scale className="w-10 h-10" />,
-    },
-    {
-      title: "Innovation",
-      description: "We leverage the latest technologies to keep your product ahead of the curve.",
-      icon: <Lightbulb className="w-10 h-10" />,
-    },
-  ]
+// const features = [
+//     {
+//       title: "Speed",
+//       description: "We deliver MVPs rapidly, helping you validate your ideas and get to market faster.",
+//       icon: <Zap className="w-10 h-10" />,
+//     },
+//     {
+//       title: "Scalability",
+//       description: "Our solutions are built to grow with your business, ensuring long-term success.",
+//       icon: <Scale className="w-10 h-10" />,
+//     },
+//     {
+//       title: "Innovation",
+//       description: "We leverage the latest technologies to keep your product ahead of the curve.",
+//       icon: <Lightbulb className="w-10 h-10" />,
+//     },
+//   ]
   
 export function WhyChooseUs() {
   return(
