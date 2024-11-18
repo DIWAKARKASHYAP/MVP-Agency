@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
-import { IconAppWindow } from "@tabler/icons-react";
+// import { IconAppWindow } from "@tabler/icons-react";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import { RainbowButton } from "../ui/rainbow-button";

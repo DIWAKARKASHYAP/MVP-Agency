@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import { Spotlight } from "../ui/Spotlight";
 import { RainbowButton } from "../ui/rainbow-button";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";

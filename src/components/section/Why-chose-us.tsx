@@ -1,13 +1,13 @@
 'use client'
 import React from 'react'
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
-import { AnimatedTooltip } from '@/components/ui/animated-tooltip'
-import { BackgroundGradient } from '@/components/ui/background-gradient'
+// import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+// import { AnimatedTooltip } from '@/components/ui/animated-tooltip'
+// import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { Zap, Scale, Lightbulb } from 'lucide-react'
 import { BackgroundBeamsWithCollision } from '../ui/background-beams-with-collision'
  
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
+// const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
+// `;
  
 
 const features = [
