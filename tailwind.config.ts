@@ -24,7 +24,7 @@ const config = {
   prefix: "",
   theme: {
   	container: {
-  		center: true,
+  		center: 'true',
   		padding: '2rem',
   		screens: {
   			'2xl': '1400px'
@@ -121,6 +121,11 @@ const config = {
   				to: {
   					'background-position': '0% 0%'
   				}
+  			},
+  			gradient: {
+  				to: {
+  					backgroundPosition: 'var(--bg-size) 0'
+  				}
   			}
   		},
   		animation: {
@@ -128,7 +133,8 @@ const config = {
   			'accordion-up': 'accordion-up 0.2s ease-out',
   			spotlight: 'spotlight 2s ease .75s 1 forwards',
   			rainbow: 'rainbow var(--speed, 2s) infinite linear',
-  			shine: 'shine var(--duration) infinite linear'
+  			shine: 'shine var(--duration) infinite linear',
+  			gradient: 'gradient 8s linear infinite'
   		}
   	}
   },

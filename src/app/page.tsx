@@ -1,6 +1,7 @@
-import { CardStackDemo } from "@/components/section/Card";
+// import { CardStackDemo } from "@/components/section/Card";
+import Contact from "@/components/section/Contact";
 import { SpotlightPreview } from "@/components/section/Hero";
-import { TypewriterEffectSmoothDemo } from "@/components/section/HeroText";
+// import { TypewriterEffectSmoothDemo } from "@/components/section/HeroText";
 import { NavbarDemo } from "@/components/section/NavBar";
 import MVPPricingSection from "@/components/section/Pricing";
 // import { BackgroundBeamsWithCollisionDemo } from "@/components/section/RainSection";
@@ -14,24 +15,32 @@ import { LampDemo } from "@/components/ui/lamp";
 export default function Home() {
   return (
     <>
+      <NavbarDemo />
+      <SpotlightPreview />
+      <div id="why">
+        <WhyChooseUs />
+      </div>
+      <div id="pricing">
+        <MVPPricingSection />
+      </div>
+      {/* <CardStackDemo/> */}
+      {/* <LampDemo /> */}
 
-<NavbarDemo/>
-    <SpotlightPreview/>
-    <WhyChooseUs/>
-    
-    <MVPPricingSection/>
-    {/* <CardStackDemo/> */}
-    <LampDemo/>
-    {/* <BackgroundBeamsWithCollisionDemo/> */}
-    {/* <div className=" flex">
+<div id="contact">
+  
+      <Contact/>
+</div>
+
+
+      
+      {/* <BackgroundBeamsWithCollisionDemo/> */}
+      {/* <div className=" flex">
 
     <BackgroundGradientDemo/>
     <BackgroundGradientDemo/>
     </div>
 
     <TypewriterEffectSmoothDemo/> */}
-
     </>
-
   );
 }

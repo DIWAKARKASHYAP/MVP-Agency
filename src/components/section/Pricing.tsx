@@ -5,36 +5,40 @@ import { motion } from 'framer-motion'
 import { BackgroundGradient } from '@/components/ui/background-gradient'
 import { CheckCircle } from 'lucide-react'
 import { RainbowButton } from '../ui/rainbow-button'
+import { Link } from 'react-scroll'
 
 const pricingPlans = [
   {
     name: 'Basic MVP',
-    price: 2000,
+    price: 1897,
     features: [
       'Core feature implementation',
-      'Basic UI/UX design',
-      'Mobile-responsive layout',
-      '2 rounds of revisions',
-      'Basic testing and QA',
+      'Modern UI/UX design',
+      'Modern, scalable tech stack',
+      'Seamless integrations (payments, auth, etc.)',
+      '30 days of free maintenance',
+      'Regular updates and transparent process',
     ],
   },
   {
     name: 'Pro MVP',
-    price: 2500,
+    price: 2497,
     features: [
       'All Basic MVP features',
-      'Advanced UI/UX design',
-      'Integration with 3rd party APIs',
+      'Flexible hours allocation',
+      '20 hours of development time per month',
+      'Priority feature development',
       'Performance optimization',
-      'Extended testing and QA',
-      'Post-launch support (1 month)',
+      'Continuous maintenance & optimization',
+      'Same-day emergency support',
+      'Post-launch support (3 month)',
     ],
   },
 ]
 
 export default function MVPPricingSection() {
   return (
-    
+
     <section className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-5">Ready to Come Your Idea to Reality?</h2>
@@ -47,21 +51,26 @@ export default function MVPPricingSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-      <BackgroundGradient className="rounded-[22px]  p-4 sm:p-10 bg-black">
-      <div className=" rounded-xl p-8 h-full flex flex-col justify-between">
+              <BackgroundGradient className="rounded-[22px] max-w-[400px]  p-4 sm:p-10 bg-black">
+                <div className=" rounded-xl p-8 h-full flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl font-semibold mb-4">{plan.name}</h3>
                     <p className="text-4xl font-bold mb-6">${plan.price}</p>
                     <ul className="space-y-3 mb-8">
                       {plan.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center">
+                          <div>
+
                           <CheckCircle className="text-green-500 mr-2 h-5 w-5" />
+                          </div>
                           <span>{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
+                  <Link to="contact" smooth={true} duration={300}>
                   <RainbowButton className="w-full">Choose {plan.name}</RainbowButton>
+                  </Link>
                 </div>
               </BackgroundGradient>
             </motion.div>
