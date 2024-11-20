@@ -43,8 +43,7 @@ export function WhyChooseUs() {
                 into successful digital products. With years of experience in
                 MVP development, we're dedicated to helping startups and
                 businesses thrive in the digital landscape. Our expertise spans
-                across cutting-edge technologies, with a focus on web and mobile
-                app development, AI integration, and blockchain solutions.
+                across cutting-edge technologies, with a focus on web development, AI integration, and blockchain solutions.
               </p>
             </div>
 
