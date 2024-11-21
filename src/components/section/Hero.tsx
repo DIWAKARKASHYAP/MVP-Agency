@@ -62,9 +62,10 @@ export function SpotlightPreview() {
         </p>
         <div className=" mt-10 text-center">
 
-          <Link to="contact" smooth={true} duration={300}>
+          <a href="#pricing" >
+
             <RainbowButton className="m-auto bg-black text-white">Start Your Project Today</RainbowButton>
-          </Link>
+          </a>
         </div>
 
       </div>
