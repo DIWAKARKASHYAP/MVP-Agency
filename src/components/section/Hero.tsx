@@ -6,6 +6,8 @@ import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 import AnimatedGradientText from "../ui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
+import { Link } from 'react-scroll';
+
 // import { RainbowButton } from "../ui/button/RainbowButton";
 const words = [
   {
@@ -36,36 +38,38 @@ export function SpotlightPreview() {
 
 
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-      <AnimatedGradientText className=" mb-4">
-        🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />{" "}
-        <span
-          className={cn(
-            `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-          )}
-        >
-          Introducing MVP Agency 7
-        </span>
-        <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-      </AnimatedGradientText>
+        <AnimatedGradientText className=" mb-4">
+          🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />{" "}
+          <span
+            className={cn(
+              `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+            )}
+          >
+            Introducing MVP Agency 7
+          </span>
+          <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+        </AnimatedGradientText>
         <h1 className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400 bg-opacity-50">
-        We Help You To Convert Your Dream MVP <br />
+          We Help You To Convert Your Dream MVP <br />
         </h1>
         <div className=" flex flex-col items-center justify-center ">
 
-        <TypewriterEffectSmooth words={words} className=" opacity-90"/>
+          <TypewriterEffectSmooth words={words} className=" opacity-90" />
         </div>
 
         <p className="mt-4 font-normal  text-xl text-neutral-300 max-w-lg text-center mx-auto">
-        Transform your business idea into a functional product with our expert MVP development services
+          Transform your business idea into a functional product with our expert MVP development services
         </p>
         <div className=" mt-10 text-center">
 
-        <RainbowButton className="m-auto bg-black text-white">Start Your Project Today</RainbowButton>
+          <Link to="contact" smooth={true} duration={300}>
+            <RainbowButton className="m-auto bg-black text-white">Start Your Project Today</RainbowButton>
+          </Link>
         </div>
 
       </div>
 
-      
+
     </div>
   );
 }
