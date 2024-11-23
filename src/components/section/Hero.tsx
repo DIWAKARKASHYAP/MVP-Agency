@@ -6,7 +6,6 @@ import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 import AnimatedGradientText from "../ui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
-import { Link } from 'react-scroll';
 
 // import { RainbowButton } from "../ui/button/RainbowButton";
 const words = [
@@ -53,24 +52,17 @@ export function SpotlightPreview() {
           We Help You To Convert Your Dream MVP <br />
         </h1>
         <div className=" flex flex-col items-center justify-center ">
-
           <TypewriterEffectSmooth words={words} className=" opacity-90" />
         </div>
-
         <p className="mt-4 font-normal  text-xl text-neutral-300 max-w-lg text-center mx-auto">
           Transform your business idea into a functional product with our expert MVP development services
         </p>
         <div className=" mt-10 text-center">
-
           <a href="#pricing" >
-
             <RainbowButton className="m-auto bg-black text-white">Start Your Project Today</RainbowButton>
           </a>
         </div>
-
       </div>
-
-
     </div>
   );
 }

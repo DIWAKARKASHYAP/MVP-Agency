@@ -43,6 +43,7 @@ export default function MVPPricingSection() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-5">Ready to Come Your Idea to Reality?</h2>
         <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-200 max-w-3xl mx-auto text-center mb-12">Choose the perfect package for your project and get started today</p>
+        <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-200 max-w-3xl mx-auto text-center mb-12">*Price is negotiable based on your requirements.</p>
         <div className="flex flex-col sm:flex-row gap-5  justify-center ">
           {pricingPlans.map((plan, index) => (
             <motion.div
